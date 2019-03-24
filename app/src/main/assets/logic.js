@@ -12,8 +12,12 @@ function ComStart(){
 
 }
 
+    function getResults(){
+
+}
+
 function getInfo(Num){
-    localStorage.setItem("clicked", Num.id);
+    sessionStorage.setItem("clicked", Num.id)
 }
 
 function load(){
@@ -22,7 +26,7 @@ function load(){
    keyNum.push((localStorage.length/2)-(i+1));
 console.log[i]
    var nbutton = document.createElement("button")
-   nbutton.setAttribute("id","Team Number"+keyNum[i]);
+   nbutton.setAttribute("id",localStorage.getItem("Team Number"+keyNum[i])+"-"+ocalStorage.getItem("Match Number"+keyNum[i]));
    nbutton.setAttribute("onclick","getInfo(this)")
    var a = document.createElement("a")
    a.setAttribute("href","info.html");
@@ -30,8 +34,10 @@ console.log[i]
   document.body.appendChild(nbutton)
   nbutton.appendChild(a)
    }
-   function loadInfo(){
-       var test
-   }
-
 }
+   function loadInfo(){
+       var test = document.createElement("p")
+       test.innerText =  sessionStorage.getItem("clicked")
+       document.body.appendChild(test)
+   }
+   
