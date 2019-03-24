@@ -131,7 +131,7 @@ var notes;
          localStorage.setItem(teamNumber+"-"+matchNumber+"-Stop", STop);
          localStorage.setItem(teamNumber+"-"+matchNumber+"-Smiddle", SMid);
          localStorage.setItem(teamNumber+"-"+matchNumber+"-SBottom", SBottom);
-         localStorage.setItem(teamNumber+"-"+matchNumber+"-Sship", Sship);
+         localStorage.setItem(teamNumber+"-"+matchNumber+"-Sship", SShip);
          localStorage.setItem(teamNumber+"-"+matchNumber+"-Hatch", THatch);
          localStorage.setItem(teamNumber+"-"+matchNumber+"-Ball", TBall);
          localStorage.setItem(teamNumber+"-"+matchNumber+"-TTop", TTop);
@@ -213,12 +213,12 @@ console.log[i];
     tShip.innerText = "Was Cargo Place In The Cargoship? "+localStorage.getItem(click+"-Tship")
     climb.innerText = "Did They Climb? "+localStorage.getItem(click+"-Climb")
     winner.innerText = "Who Won? "+localStorage.getItem(click+"-Win")
-    rScore.innerText = "Red Score: "+localStorage.getItem(click+"-Rscore")
-    bScore.innerText = "Blue Score: "+localStorage.getItem(click+"-Bscore")
+    rScore.innerText = "Red Score: "+localStorage.getItem(click+"-RScore")
+    bScore.innerText = "Blue Score: "+localStorage.getItem(click+"-BScore")
     notes.innerText = "Notes: "+localStorage.getItem(click+"-Notes")
 
-       for(i=0; i<(localStorage.length/20); i++){
-        keyNum.push((localStorage.length/20)-(i+1));
+       for(i=0; i<(localStorage.length/22); i++){
+        keyNum.push((localStorage.length/22)-(i+1));
        team.innerText = "Team Number: "+ localStorage.getItem("Team Number"+keyNum[i])
        match.innerText = "Match Number: "+ localStorage.getItem("Team Number"+keyNum[i])
        }
@@ -249,3 +249,4 @@ console.log[i];
 
 
    }
+
