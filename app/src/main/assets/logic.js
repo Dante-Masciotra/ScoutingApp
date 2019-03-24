@@ -121,8 +121,8 @@ var notes;
          notes = document.getElementById("notes").value;
 
 
-         localStorage.setItem("Team Number"+(localStorage.length/20), teamNumber);
-         localStorage.setItem("Match Number"+((localStorage.length-1)/20), matchNumber);
+         localStorage.setItem("Team Number"+(localStorage.length/22), teamNumber);
+         localStorage.setItem("Match Number"+((localStorage.length-1)/22), matchNumber);
          localStorage.setItem(teamNumber+"-"+matchNumber+"-Location", Event);
          localStorage.setItem(teamNumber+"-"+matchNumber+"-Position", position);
          localStorage.setItem(teamNumber+"-"+matchNumber+"-color", Color);
@@ -157,8 +157,8 @@ function getInfo(Num){
 
 function load(){
 
-   for(i=0; i<(localStorage.length/20); i++){
-   keyNum.push((localStorage.length/20)-(i+1));
+   for(i=0; i<(localStorage.length/22); i++){
+   keyNum.push((localStorage.length/22)-(i+1));
 console.log[i];
    var nbutton = document.createElement("button");
    nbutton.setAttribute("id",localStorage.getItem("Team Number"+keyNum[i])+"-"+localStorage.getItem("Match Number"+keyNum[i]));
