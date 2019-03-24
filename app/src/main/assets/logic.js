@@ -40,4 +40,3 @@ console.log[i]
        test.innerText =  sessionStorage.getItem("clicked")
        document.body.appendChild(test)
    }
-   
