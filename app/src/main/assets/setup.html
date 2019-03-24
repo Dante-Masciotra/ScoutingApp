@@ -8,9 +8,24 @@
 </head>
 <body>
 <p>Let's Begin</p>
+<p>  </p>
+<p>Team Number:</p>
 <input type="number" name="TeamNum" placeholder="Team Number" max="9999" min="1" id="teamNum">
-<input type="number" name="MatchNum" placeholder="Match Number" max="9999" min="1" id="matchNum">
+<p>  </p>
+<p>Match Number:</p>
+<input type="number" name="MatchNum" placeholder="Match Number" max="100" min="1" id="matchNum">
 
+<p>  </p>
+<p>Location:</p>
+<div class="Location">
+    <label for="Windsor">Windsor</label>
+    <input type="radio" name="Location" id="Windsor">
+    <label for="London">London</label>
+    <input type="radio" name="Location" id="London">
+</div>
+
+<p>  </p>
+<p>Starting Position:</p>
 <div class="Position">
     <label for="left">Left</label>
     <input type="radio" name="position" id="left">
@@ -20,13 +35,14 @@
     <input type="radio" name="position" id="right">
 </div>
 
-
+<p>  </p>
 <!-- wip -->
-<div class="Color">
-    <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-    </label>
+<p>Team Colour:</p>
+<div class="Colour">
+    <label for="Red">Red</label>
+    <input type="radio" name="Colour" id="Red">
+    <label for="Blue">Blue</label>
+    <input type="radio" name="Colour" id="Blue">
 </div>
 <!-- wip -->
 
