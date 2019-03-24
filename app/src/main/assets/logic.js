@@ -26,7 +26,7 @@ function load(){
    keyNum.push((localStorage.length/2)-(i+1));
 console.log[i]
    var nbutton = document.createElement("button")
-   nbutton.setAttribute("id",localStorage.getItem("Team Number"+keyNum[i])+"-"+ocalStorage.getItem("Match Number"+keyNum[i]));
+   nbutton.setAttribute("id",localStorage.getItem("Team Number"+keyNum[i])+"-"+localStorage.getItem("Match Number"+keyNum[i]));
    nbutton.setAttribute("onclick","getInfo(this)")
    var a = document.createElement("a")
    a.setAttribute("href","info.html");
