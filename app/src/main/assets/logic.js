@@ -117,6 +117,7 @@ var notes;
          }
          RScore=document.getElementById("RScore").value;
          BScore=document.getElementById("BScore").value;
+
          notes = document.getElementById("notes").value;
 
 
@@ -130,15 +131,19 @@ var notes;
          localStorage.setItem(teamNumber+"-"+matchNumber+"-Stop", STop);
          localStorage.setItem(teamNumber+"-"+matchNumber+"-Smiddle", SMid);
          localStorage.setItem(teamNumber+"-"+matchNumber+"-SBottom", SBottom);
-         localStorage.setItem(teamNumber+"-"+matchNumber+"-hatch", THatch);
-         localStorage.setItem(teamNumber+"-"+matchNumber+"-ball", TBall);
+         localStorage.setItem(teamNumber+"-"+matchNumber+"-Sship", Sship);
+         localStorage.setItem(teamNumber+"-"+matchNumber+"-Hatch", THatch);
+         localStorage.setItem(teamNumber+"-"+matchNumber+"-Ball", TBall);
          localStorage.setItem(teamNumber+"-"+matchNumber+"-TTop", TTop);
          localStorage.setItem(teamNumber+"-"+matchNumber+"-Tmiddle", TMid);
          localStorage.setItem(teamNumber+"-"+matchNumber+"-TBottom", TBottom);
+         localStorage.setItem(teamNumber+"-"+matchNumber+"-Tship", TShip);
          localStorage.setItem(teamNumber+"-"+matchNumber+"-Climb",Climb);
          localStorage.setItem(teamNumber+"-"+matchNumber+"-Win", Winner);
          localStorage.setItem(teamNumber+"-"+matchNumber+"-BScore", BScore);
          localStorage.setItem(teamNumber+"-"+matchNumber+"-RScore", RScore);
+         localStorage.setItem(teamNumber+"-"+matchNumber+"-Notes", notes);
+
 
 
 
@@ -166,8 +171,81 @@ console.log[i];
    }
 }
    function loadInfo(){
-       var test = document.createElement("p");
-       test.innerText =  sessionStorage.getItem("clicked");
-       document.body.appendChild(test);
-   }
+     var click = sessionStorage.getItem("clicked");
 
+      var match= document.createElement("p");
+      var team= document.createElement("p");
+      var loc = document.createElement("p");
+      var color= document.createElement("p");
+      var pos= document.createElement("p");
+      var sHatch= document.createElement("p");
+      var sBall= document.createElement("p");
+      var sTop= document.createElement("p");
+      var sBottom= document.createElement("p");
+      var Smid= document.createElement("p");
+      var sShip= document.createElement("p");
+      var tHatch= document.createElement("p");
+      var tBall= document.createElement("p");
+      var tTop= document.createElement("p");
+      var tBottom= document.createElement("p");
+      var tMid= document.createElement("p");
+      var tShip= document.createElement("p");
+      var climb= document.createElement("p");
+      var winner= document.createElement("p");
+      var rScore= document.createElement("p");
+      var bScore= document.createElement("p");
+      var notes= document.createElement("p");
+
+    loc.innerText = "Location: "+localStorage.getItem(click+"-Location")
+    color.innerText = "Team Color: "+localStorage.getItem(click+"-color")
+    pos.innerText = "Start Position: "+localStorage.getItem(click+"-Position")
+    sHatch.innerText = "Hatches Placed In Sandstorm: "+localStorage.getItem(click+"-Shatch")
+    sBall.innerText = "Cargo Placed In Sandstorm: "+localStorage.getItem(click+"-Sball")
+    sTop.innerText = "Was Cargo Place In The Top During SandStorm? "+localStorage.getItem(click+"-Stop")
+    sBottom.innerText = "Was Cargo Place In The Bottom During SandStorm? "+localStorage.getItem(click+"-SBottom")
+    Smid.innerText = "Was Cargo Place In The Middle During SandStorm? "+localStorage.getItem(click+"-Smiddle")
+    sShip.innerText = "Was Cargo Place In The Cargoship During SandStorm? "+localStorage.getItem(click+"-Sship")
+    tHatch.innerText = "Hatches Placed: "+localStorage.getItem(click+"-Hatch")
+    tBall.innerText = "Cargo Placed: "+localStorage.getItem(click+"-Ball")
+    tTop.innerText = "Was Cargo Place In The Top? "+localStorage.getItem(click+"-TTop")
+    tBottom.innerText = "Was Cargo Place In The Bottom? "+localStorage.getItem(click+"-TBottom")
+    tMid.innerText = "Was Cargo Place In The Middle? "+localStorage.getItem(click+"-Tmiddle")
+    tShip.innerText = "Was Cargo Place In The Cargoship? "+localStorage.getItem(click+"-Tship")
+    climb.innerText = "Did They Climb? "+localStorage.getItem(click+"-Climb")
+    winner.innerText = "Who Won? "+localStorage.getItem(click+"-Win")
+    rScore.innerText = "Red Score: "+localStorage.getItem(click+"-Rscore")
+    bScore.innerText = "Blue Score: "+localStorage.getItem(click+"-Bscore")
+    notes.innerText = "Notes: "+localStorage.getItem(click+"-Notes")
+
+       for(i=0; i<(localStorage.length/20); i++){
+        keyNum.push((localStorage.length/20)-(i+1));
+       team.innerText = "Team Number: "+ localStorage.getItem("Team Number"+keyNum[i])
+       match.innerText = "Match Number: "+ localStorage.getItem("Team Number"+keyNum[i])
+       }
+
+       document.getElementById("Match").appendChild(match)
+       document.getElementById("team").appendChild(team)
+       document.getElementById("location").appendChild(loc)
+       document.getElementById("pos").appendChild(pos)
+       document.getElementById("color").appendChild(color)
+       document.getElementById("sHatch").appendChild(sHatch)
+       document.getElementById("sBall").appendChild(sBall)
+       document.getElementById("sTop").appendChild(sTop)
+       document.getElementById("Smid").appendChild(Smid)
+       document.getElementById("sBottom").appendChild(sBottom)
+       document.getElementById("sShip").appendChild(sShip)
+       document.getElementById("tHatch").appendChild(tHatch)
+       document.getElementById("tBall").appendChild(tBall)
+       document.getElementById("tTop").appendChild(tTop)
+       document.getElementById("tMid").appendChild(tMid)
+       document.getElementById("tBottom").appendChild(tBottom)
+       document.getElementById("tShip").appendChild(tShip)
+       document.getElementById("climb").appendChild(climb)
+       document.getElementById("rScore").appendChild(rScore)
+       document.getElementById("bScore").appendChild(bScore)
+       document.getElementById("winner").appendChild(winner)
+       document.getElementById("notes").appendChild(notes)
+
+
+
+   }
