@@ -29,11 +29,11 @@
 <p>Starting Position:</p>
 <div class="Position">
     <label for="left">Left</label>
-    <input type="radio" name="position" id="left">
+    <input type="radio" name="position" id="left" value="Left">
     <label for="middle">Middle</label>
-    <input type="radio" name="position" id="middle">
+    <input type="radio" name="position" id="middle" value="Middle">
     <label for="right">Right</label>
-    <input type="radio" name="position" id="right">
+    <input type="radio" name="position" id="right" value="Right">
 </div>
 
 
@@ -120,7 +120,9 @@
 
 
 <button><a href="index.html">Home</a></button>
-<button><a href="Open.html">Save File</a></button>
+<button onclick="getResults()">
+    <a href="Open.html">Save File</a>
+</button>
 
 </body>
 </html>
