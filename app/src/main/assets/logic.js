@@ -109,6 +109,7 @@ var notes;
              Climb = document.getElementsByName("Y/n")[1].value;
          }
          if(document.getElementsByName("Win")[0].checked == true){
+             //d@nte was here
             Winner = document.getElementsByName("Win")[0].value;
          }else if(document.getElementsByName("Win")[1].checked == true){
              Winner = document.getElementsByName("Win")[1].value;
