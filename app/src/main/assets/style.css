@@ -1,8 +1,8 @@
-body{
-    width: 590px;
-    overflow-x:scroll;
-}
 
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .open{
     border-radius: 30%;
 }
@@ -15,32 +15,44 @@ body{
     position: relative;
     left: 25%;
     font-size: 3em;
+    width: 550px;
 }
 .TTitle{
     position: relative;
     left: 35%;
     font-size: 3em;
+    width: 550px;
+
 }
 .SandStorm{
     text-align: center;
+    width: 550px;
 }
 .Telop{
     text-align: center;
+    width: 550px;
 }
 
 .ETitle{
     position: relative;
     left: 25%;
     font-size: 3em;
+    width: 550px;
+
 }
 .EndGame{
     text-align: center;
+    width: 550px;
 }
 .PreGame{
     text-align: center;
+    width: 550px;
+
 }
 .buttons{
     text-align: center;
+    width: 550px;
+
 }
 
 .heading{
