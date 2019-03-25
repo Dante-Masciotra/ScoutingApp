@@ -220,10 +220,11 @@ console.log[i];
 
        for(i=0; i<(localStorage.length/22); i++){
         keyNum.push((localStorage.length/22)-(i+1));
-       team.innerText = "Team Number: "+ localStorage.getItem("Team Number"+keyNum[i])
-       match.innerText = "Match Number: "+ localStorage.getItem("Team Number"+keyNum[i])
+        ind = keyNum.length-1;
+       team.innerText = "Team Number: "+ localStorage.getItem("Team Number"+keyNum[ind])
+       match.innerText = "Match Number: "+ localStorage.getItem("Team Number"+keyNum[ind])
        }
-
+    
        document.getElementById("Match").appendChild(match)
        document.getElementById("team").appendChild(team)
        document.getElementById("location").appendChild(loc)
