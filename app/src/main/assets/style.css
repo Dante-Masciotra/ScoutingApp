@@ -58,16 +58,16 @@ body{
 .heading{
 text-align: center;
 text-decoration: underline;
-font-size: 4em;}
-
-.subheading{
-position: relative; 
-top:4px;
-left:4px;
-}
+font-size: 6em;}
 
 
 .logo{
 position:relative;
-left:35%;
+left:25%;
 }
+
+
+.indexbuttons{
+position:relative;
+left:40%;
+top:120%;}
