@@ -26,8 +26,8 @@ var BScore;
 var notes;
 
     function getResults(){
-        teamNumber = document.getElementById("teamNum").value;
-    matchNumber = document.getElementById("matchNum").value;
+        teamNumber = document.getElementById("TeamNum").value;
+    matchNumber = document.getElementById("MatchNum").value;
 
     if(document.getElementsByName("position")[0].checked == true){
         position = document.getElementsByName("position")[0].value;
@@ -154,6 +154,8 @@ var notes;
 
 function getInfo(Num){
     sessionStorage.setItem("clicked", Num.id);
+    sessionStorage.setItem("clicked2", Num.className);
+
 }
 
 function load(){
@@ -164,6 +166,7 @@ console.log[i];
    var nbutton = document.createElement("button");
    nbutton.setAttribute("id",localStorage.getItem("Team Number"+keyNum[i])+"-"+localStorage.getItem("Match Number"+keyNum[i]));
    nbutton.setAttribute("onclick","getInfo(this)");
+   nbutton.setAttribute("class",keyNum[i]);
    var a = document.createElement("a");
    a.setAttribute("href","info.html");
    a.innerText= " Team: "+localStorage.getItem("Team Number"+keyNum[i]) +" Match: "+localStorage.getItem("Match Number"+keyNum[i]);
@@ -173,6 +176,8 @@ console.log[i];
 }
    function loadInfo(){
      var click = sessionStorage.getItem("clicked");
+     var click2 = sessionStorage.getItem("clicked2");
+
 
       var match= document.createElement("p");
       var team= document.createElement("p");
@@ -218,12 +223,12 @@ console.log[i];
     bScore.innerText = "Blue Score: "+localStorage.getItem(click+"-BScore")
     notes.innerText = "Notes: "+localStorage.getItem(click+"-Notes")
 
-       for(i=0; i<(localStorage.length/22); i++){
-        keyNum.push((localStorage.length/22)-(i+1));
-        ind = keyNum.length-1;
-       team.innerText = "Team Number: "+ localStorage.getItem("Team Number"+keyNum[ind])
-       match.innerText = "Match Number: "+ localStorage.getItem("Team Number"+keyNum[ind])
-       }
+    
+       team.innerText = "Team Number: "+ localStorage.getItem("Team Number"+click2)
+       match.innerText = "Match Number: "+ localStorage.getItem("Match Number"+click2)
+    
+       console.log(click2);
+       console.log(localStorage.getItem("Match Number"+click2));
     
        document.getElementById("Match").appendChild(match)
        document.getElementById("team").appendChild(team)
