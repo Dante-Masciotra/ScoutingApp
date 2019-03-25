@@ -21,8 +21,8 @@ background-color: white
 }
 .SandStorm{
     text-align: center;
-}
 .Telop{
+}
     text-align: center;
 }
 
@@ -31,8 +31,8 @@ background-color: white
     left: 25%;
     font-size: 3em;
 }
-
 .EndGame{
+
     text-align: center;
 }
 .PreGame{
@@ -40,4 +40,16 @@ background-color: white
 }
 .buttons{
     text-align: center;
+}
+.heading{
+text-align: center;
+text-decoration: underline;
+font-size: 4em;}
+
+.subheading{
+position: relative: top
+Position:relative: left}
+
+align: center;
+.logo{
 }
