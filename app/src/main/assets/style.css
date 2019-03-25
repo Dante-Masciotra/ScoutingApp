@@ -1,4 +1,8 @@
 
+@font-face {
+    font-family: "Space";
+    src: url("font/spacefont/Potra.ttf");
+}
 body{
     max-width: 100%;
     overflow-x: hidden;
@@ -57,7 +61,9 @@ body{
 .heading{
 text-align: center;
 text-decoration: underline;
-font-size: 6em;}
+font-size: 6em;
+font-family: Space;
+}
 
 
 .logo{
