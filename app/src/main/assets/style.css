@@ -6,4 +6,38 @@
     text-decoration: none;
 }
 body{
-background-color: white}
+background-color: white
+}
+
+.STitle{
+    position: relative;
+    left: 25%;
+    font-size: 3em;
+}
+.TTitle{
+    position: relative;
+    left: 35%;
+    font-size: 3em;
+}
+.SandStorm{
+    text-align: center;
+}
+.Telop{
+    text-align: center;
+}
+
+.ETitle{
+    position: relative;
+    left: 25%;
+    font-size: 3em;
+}
+
+.EndGame{
+    text-align: center;
+}
+.PreGame{
+    text-align: center;
+}
+.buttons{
+    text-align: center;
+}

@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="logic.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<p>Let's Begin</p>
+<div class="PreGame">
 <p>  </p>
 <p>Team Number:</p>
 <input type="number" name="TeamNum" placeholder="Team Number" max="9999" min="1" id="teamNum">
@@ -44,11 +45,11 @@
     <label for="Blue">Blue</label>
     <input type="radio" name="Colour" id="Blue" Value="Blue">
 </div>
+</div>
 
+<p class="STitle">Sand Storm</p>
 
-<p>Sand Storm-</p>
-
-
+<div class="SandStorm">
 <p>Hatches:</p>
 <input type="number" name="hatch" placeholder="Hatches Placed" id="Shatch">
 
@@ -66,11 +67,11 @@
 <input type="checkbox" name="bottom" id="Sbottom" value="Bottom Reached">
 <label for="Sship">Cargo Ship</label>
 <input type="checkbox" name="Cargo Ship" id="Sship" value="Ship Reached">
+</div>
 
+<p class="TTitle">Teleop</p>
 
-<p>Teleop-</p>
-
-
+<div class="Telop">
 <p>Hatches:</p>
 <input type="number" name="hatch" placeholder="Hatches Placed" id="hatch">
 
@@ -95,10 +96,12 @@
 <input type="radio" name="Y/n" id="yes" value="Yes">
 <label for="no">No</label>
 <input type="radio" name="Y/n" id="no" value="No">
-
+</div>
 <p>  </p>
-<p>End Game:</p>
 
+<p class="ETitle">End Game</p>
+
+<div class="EndGame">
 <p>  </p>
 <p>Winning Colour:</p>
 <label for="RedW">Red: </label>
@@ -111,6 +114,7 @@
 <p>Final Score:</p>
 <label for="RScore">Red Score: </label>
 <input type="number" name="RedScore" id="RScore">
+<br>
 <label for="BScore">Blue Score: </label>
 <input type="number" name="BlueScore" id="BScore">
 
@@ -120,10 +124,12 @@
 
 <br>
 <br>
+</div>
 
-<a href="index.html"><img src="images/Home.png" alt="add" style="width:3%; height:3%;"></a>
+<div class="buttons">
+<a href="index.html"><img src="images/Home.png" alt="add" style="width:10%; height:10%;"></a>
 
-<a onclick="getResults()" href="Open.html"><img src="images/next.png" alt="add" style="width:3%; height:3%;"></a>
-
+<a onclick="getResults()" href="Open.html"><img src="images/next.png" alt="add" style="width:10%; height:10%;"></a>
+</div>
 </body>
 </html>
