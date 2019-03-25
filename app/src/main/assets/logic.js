@@ -46,7 +46,7 @@ var notes;
      if(document.getElementsByName("Colour")[0].checked == true){
         Color = document.getElementsByName("Colour")[0].value;
      }else{
-         Color = document.getElementsByName("Location")[1].value;
+         Color = document.getElementsByName("Colour")[1].value;
      }
 
         SHatch= document.getElementById("Shatch").value;
@@ -74,8 +74,8 @@ var notes;
                     }
 
 
-        Hatch= document.getElementById("hatch").value;
-        Ball= document.getElementById("ball").value;
+        THatch= document.getElementById("hatch").value;
+        TBall= document.getElementById("ball").value;
 
         TTop= document.getElementById("top").value;
         TMid= document.getElementById("middle").value;
