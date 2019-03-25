@@ -62,12 +62,13 @@ font-size: 6em;}
 
 
 .logo{
-position:relative;
+position: absolute;
 left:25%;
-}
+top: 30%;
+;}
 
 
 .indexbuttons{
-position:relative;
+position:absolute;
 left:40%;
-top:120%;}
+top:80%;}
