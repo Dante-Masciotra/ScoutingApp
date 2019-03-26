@@ -26,8 +26,8 @@ var BScore;
 var notes;
 
     function getResults(){
-        teamNumber = document.getElementById("TeamNum").value;
-    matchNumber = document.getElementById("MatchNum").value;
+        teamNumber = document.getElementById("teamNum").value;
+    matchNumber = document.getElementById("matchNum").value;
 
     if(document.getElementsByName("position")[0].checked == true){
         position = document.getElementsByName("position")[0].value;
