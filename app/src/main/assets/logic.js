@@ -87,8 +87,8 @@ var notes;
             }else{
                 TTop="Not Reached";
             }
-            if(document.getElementById("middle").checked == true){
-            TMid= document.getElementById("middle").value;
+            if(document.getElementById("cmiddle").checked == true){
+            TMid= document.getElementById("cmiddle").value;
                 }else{
                     TMid="Not Reached";
                 }
@@ -103,11 +103,14 @@ var notes;
                             TShip="Not Reached";
                         }
 
-        if(document.getElementsByName("Y/n")[0].checked == true){
-            Climb = document.getElementsByName("Y/n")[0].value;
+        if(document.getElementsByName("climb")[0].checked == true){
+            Climb = document.getElementsByName("climb")[0].value;
+         }else if(document.getElementsByName("climb")[1].checked == true){
+             Climb = document.getElementsByName("climb")[1].value;
          }else{
-             Climb = document.getElementsByName("Y/n")[1].value;
-         }
+            Climb = document.getElementsByName("climb")[2].value;
+                   }
+
          if(document.getElementsByName("Win")[0].checked == true){
              //d@nte was here
             Winner = document.getElementsByName("Win")[0].value;
